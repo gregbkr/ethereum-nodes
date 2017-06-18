@@ -29,7 +29,7 @@ services:
   paritytest:
     image: ethcore/parity:latest
     volumes:
-      - paritytest:/root/.parity
+      - ./paritytest:/root/.local
     ports:
       - 8545:8545
       - 8080:8080
